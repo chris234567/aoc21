@@ -13,12 +13,8 @@ def solve(d):
         a = r[0]
         r = [r[1], r[2], r[3], r[4], r[5], r[6], r[7] + a, r[8], a]
 
-    c = 0
+    return sum(r)
 
-    for i in r:
-        c += i
-
-    return c
 
 print("solution to part 1: {}".format(solve(80)))
 print("solution to part 2: {}".format(solve(256)))
